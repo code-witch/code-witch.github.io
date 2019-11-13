@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    'name . . info' 
+    'summary summary summary summary'
+    'education-title . . .'
+    'education-time . . .'
+    'education education education education'
+    'education-desc education-desc education-desc education-desc'
+    'skills skills skills skills'
+    'experience-title . . .'
+    'experience-time . . .'
+    'experience experience experience experience'
+    'experience-desc experience-desc experience-desc experience-desc';
+    grid-template-columns: 25fr 25fr 25fr 25fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /*fix me*/
+    width: 100%;
+}
+.name {
+    grid-area: name;
+}
+.info-icon {
+    grid-area: info;
+}
+.desc {
+    grid-area: summary;
+}
+.education-title {
+    grid-area: education-title;
+}
+.grad-time {
+    grid-area: education-time;
+}
+.education-name {
+    grid-area: education;
+}
+.education-desc {
+    grid-area: education-desc;
+}
+.skills {
+    grid-area: skills;
+}
+.experience-title {
+    grid-area: experience-title;
+}
+.experience-time {
+    grid-area: experience-time;
+}
+.experience-name {
+    grid-area: experience;
+}
+.experience-desc {
+    grid-area: experience-desc;
+}
+
+
+/* ul {
+    margin: 0 20px;
+} */
