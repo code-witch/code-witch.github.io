@@ -1,24 +1,14 @@
 const canvas = document.getElementById('pieCanvas');
 const ctx = canvas.getContext('2d');
 
-const fire = '#ff6161';
-const grass = '#568700';
-const water = '#00b5b5';
-const yes = '#568700';
-const no = '#ff6161';
-
 const background = '#282a36';
 const textColor = '#ccc';
 const borderColor = '#313544';// #2b2e3b
 
-// just add all the colors here :D
-// find a way to only color the slices that need color,
-// check if its checking color array size
+
 const chartColors = ['red','green','blue','purple','pink','yellow', 'black', 'white', 'orange', 'cyan'];
 // const languageColors = ['red','green','blue','purple','pink','yellow', 'black', 'white', 'orange', 'cyan']
 
-// put these in weeks?
-// maybe just percents?
 const skills = {
     languages: {
         name: 'Languages',
@@ -83,7 +73,6 @@ const skills = {
     }
 }
 
-
 for (const key in skills) {
     for (const skill in skills[key]) {
         if (skill !== 'total' && skill !== 'name'&& skill !== 'unit') {
@@ -91,7 +80,6 @@ for (const key in skills) {
         }
     }
 }
-
 
 
 const angle = (amount, total) => {
@@ -111,8 +99,6 @@ const drawPieSlice = (x, y, startAngle, totalAngle, color, size) => {
     ctx.beginPath();
     ctx.moveTo(x,y);
     ctx.ellipse(x,y, size, size, 0, startAngle * (Math.PI/180), totalAngle * (Math.PI/180));
-
-
 
     ctx.closePath();
     ctx.fill();
