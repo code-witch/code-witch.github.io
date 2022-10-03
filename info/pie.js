@@ -6,8 +6,8 @@ const textColor = '#ccc';
 const borderColor = '#313544';// #2b2e3b
 
 
-const chartColors = ['red','green','blue','purple','pink','yellow', 'black', 'white', 'orange', 'cyan'];
-// const languageColors = ['red','green','blue','purple','pink','yellow', 'black', 'white', 'orange', 'cyan']
+const chartColors = ['#E34949','#49E37A','#4975E3','#9449E3','#E149E3','#E3D049','#E38D49'];
+// const chartColors = ['cyan','green','blue','purple','pink','yellow', 'black', 'white', 'orange', 'red']
 
 const skills = {
     languages: {
