@@ -19,7 +19,7 @@ const skills = {
         "JavaScript": 35,
         "Java": 5,
         "C#": 5,
-        "HTML & CSS": 10,
+        "Pug & HTML & CSS": 10,
         // pug: 0,
         "Ruby": 10,
     },
@@ -40,8 +40,8 @@ const skills = {
         unit: ' years',
 
         // mvc & mvvm: 4, // years
-        "Express.js": 3,
-        "Node.js": 3,
+        "Express.js": new Date().getFullYear() - new Date('jan 1 2019').getFullYear(),
+        "Node.js": new Date().getFullYear() - new Date('jan 1 2019').getFullYear(),
         "UWP": 0.5,
         "ASP.NET": 0.5,
         "ReactJS": 0.5,
@@ -51,10 +51,10 @@ const skills = {
         total: 0,
         unit: ' years',
 
-        "Git": 6,
+        "Git": new Date().getFullYear() - new Date('jan 1 2016').getFullYear(),
         "Adobe Illustrator": 1,
         "Adobe Photoshop": 0.5,
-        "Visual Studio Code": 4,
+        "Visual Studio Code": new Date().getFullYear() - new Date('jan 1 2018').getFullYear(),
     },
     misc: {
         name: 'Robots & OS',
@@ -67,9 +67,9 @@ const skills = {
         "Soldering": 3,
         "FRC": 5,
 
-        "Linux": 6,
-        "MacOS": 4,
-        "Windows": 10,
+        "Windows": new Date().getFullYear() - new Date('jan 1 2010').getFullYear(),
+        "Linux": new Date().getFullYear() - new Date('jan 1 2014').getFullYear(),
+        "MacOS": new Date().getFullYear() - new Date('jan 1 2018').getFullYear(),
     }
 }
 
