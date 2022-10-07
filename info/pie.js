@@ -21,7 +21,8 @@ const skills = {
         "C#": 5,
         "Pug & HTML & CSS": 10,
         // pug: 0,
-        "Ruby": 10,
+        "Ruby": 5,
+        "PHP": 5
     },
     databases: {
         name: 'Databases',
@@ -29,7 +30,7 @@ const skills = {
         unit: '%',
 
         "MySQL": 25,
-        "MSSQL Server": 10,
+        "MS SQL Server": 10,
         "PostgreSQL": 10,
         "MongoDB": 50,
         "Neo4j": 5,
