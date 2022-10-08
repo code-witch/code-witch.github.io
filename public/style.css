@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Ubuntu+Mono:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Syne+Mono&family=VT323&display=swap'); */
+* {
+    --color-1: #b93883;
+    --color-2: #3879b9;
+    --color-3: #38b983;
+    --color-4: #b9ac38;
+    --color-5: #cc62ec;
+    --borders: #38aab9;
+    color: #eee;
+    font-family: 'Comfortaa', cursive;
+    /* font-family: 'Roboto Mono', monospace; */
+    /* font-family: 'Syne Mono', monospace; */
+    /* font-family: 'VT323', monospace; */
+}
+img {
+    display: none;
+}
+canvas {
+    /* width: 1920px;
+    height: 1080px; */
+    /* background: #282a36; */
+    background: black;
+    position: fixed; 
+    left: 0; 
+    top: 0; 
+    z-index: -1;
+}
+
+a {
+    font-family: 'Open Sans', cursive;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin: 0 auto;
+}
+
+table {
+    
+    padding: 5vh 2vw;
+    background: #282a36;
+    border: var(--borders) solid 2px;
+    border-radius: 10px;
+    width: 40vw;
+    height: 20vh;
+    text-align: center;
+
+}
+
+caption {
+    -webkit-text-fill-color: #eee;
+    /* -webkit-text-stroke: #333 1px; */
+    font-family: 'Ubuntu Mono', cursive;
+    /* font-family: ''; */
+    font-size: x-large;
+    text-align: right;
+}
+
+th {
+    font-family: 'Comfortaa', cursive;
+    padding: 5px;
+    /* border-spacing: 10px; */
+    border-right: solid var(--borders) 3px;
+    font-weight: normal;
+}
+
+td {
+    font-family: 'Open Sans', cursive;
+    margin: 10px;
+}
+
+#topic-1 {
+    color: var(--color-1);
+}
+
+#topic-2 {
+    color: var(--color-2);
+}
+
+#topic-3 {
+    color: var(--color-3);
+}
+
+#topic-4 {
+    color: var(--color-4);
+}
+
+#topic-5 {
+    color: var(--color-5);
+}
+
+#temp-canvas {
+    /* display: none; */
+    background: red;
+}
