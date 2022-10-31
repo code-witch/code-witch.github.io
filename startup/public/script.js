@@ -1,10 +1,3 @@
-if(window.location.search.includes('startup')) {
-    console.log("congrats you found this...");
-} 
-else {
-    window.location.href='./info/index.html';
-}   
-
 const clock = document.getElementById('caption')
 const imageElement = document.getElementById('background-image');
 const canvas = document.getElementById('background-canvas');
@@ -12,7 +5,7 @@ const ctx = canvas.getContext('2d');
 const temp_canvas = document.getElementById('temp-canvas');
 const temp_ctx = temp_canvas.getContext('2d');
 // ctx.imageSmoothingEnabled = false;
-
+let glitchEffect = false;
 // const channels = ['red', 'green', 'blue']
 const colorData = {};
 const offsets = {
@@ -45,13 +38,17 @@ const randomImage = () => {
 const makeImage = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    // for (const color in offsets) {
-    //     temp_ctx.clearRect(0, 0, temp_canvas.width, temp_canvas.height);
-    //     temp_ctx.putImageData(colorData[color], 0, 0);
-        
-    //     ctx.drawImage(temp_canvas,offsets[color].x,offsets[color].y)
-    // }
-    ctx.drawImage(imageElement, 0, 0, canvas.width, canvas.height);
+    if (glitchEffect) {
+        // for (const color in offsets) {
+        //     temp_ctx.clearRect(0, 0, temp_canvas.width, temp_canvas.height);
+        //     temp_ctx.putImageData(colorData[color], 0, 0);
+            
+        //     ctx.drawImage(temp_canvas,offsets[color].x,offsets[color].y)
+        // }
+    }
+    else {
+        ctx.drawImage(imageElement, 0, 0, canvas.width, canvas.height);
+    }
 
     clearInterval(starter);
 }
