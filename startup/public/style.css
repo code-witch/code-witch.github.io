@@ -45,12 +45,17 @@ main {
     margin: 0 auto;
 }
 
+
+.main-content {
+    backdrop-filter: blur(1.5rem);
+    background: #282a36dd;
+    border-radius: 10px;
+}
+
 table {
     
     padding: 5vh 2vw;
-    background: #282a36;
-    border: var(--borders) solid 2px;
-    border-radius: 10px;
+    /* border: var(--borders) solid 2px; */
     width: 40vw;
     height: 20vh;
     text-align: center;
@@ -58,19 +63,22 @@ table {
 }
 
 caption {
-    -webkit-text-fill-color: #eee;
+    margin: 0;
+    padding: 5px;
+    color: #eee ;
+    /* -webkit-text-fill-color: #282a36; */
     /* -webkit-text-stroke: #333 1px; */
     font-family: 'Ubuntu Mono', cursive;
     /* font-family: ''; */
     font-size: x-large;
-    text-align: right;
+    text-align: center;
 }
 
 th {
     font-family: 'Comfortaa', cursive;
     padding: 5px;
     /* border-spacing: 10px; */
-    border-right: solid var(--borders) 3px;
+    border-right: solid var(--borders) 2px;
     font-weight: normal;
 }
 
