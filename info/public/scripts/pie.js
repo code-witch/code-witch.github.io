@@ -76,7 +76,7 @@ const skills = {
 
 for (const key in skills) {
     for (const skill in skills[key]) {
-        if (skill !== 'total' && skill !== 'name'&& skill !== 'unit') {
+        if (skill !== 'total' && skill !== 'name' && skill !== 'unit') {
             skills[key].total += skills[key][skill];
         }
     }
